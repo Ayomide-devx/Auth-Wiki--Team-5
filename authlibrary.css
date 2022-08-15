@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap');
+/* 
+ background: #4434A6;
+ background: linear-gradient(0deg, #1E0B94, #1E0B94),
+linear-gradient(0deg, #00B4D8, #00B4D8);
+*/
+/* Ayomide Daniel Ayeni */
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Hind', sans-serif;
+    font-family: 'Pilcrow Rounded', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    width: 100%;
+    background-color: #FFFFFF;
+    font-family: 'Hind', sans-serif;
+    border-bottom: 1px solid #4434A6;
+    z-index: 2;
+}
+.logo {
+    display: inline;
+    color:#00B4D8;
+    font-family: 'Pilcrow Rounded', sans-serif;
+    margin-left: 30px;
+    font-size: 25px;
+}
+.logo > span{
+    color:#1E0B94;
+    font-size: 25px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2em;
+    color: #353434;
+    align-items: center;
+    padding-right: 80px;
+}
+input{
+    border: none;
+    width: 100%;
+    outline: none; 
+}
+li{
+    padding: 0.2em;
+    border-width: 0 0 6px 0 ;
+    border-style: solid;
+    border-color: white;
+}
+li:hover{
+    border-color: #4434A6;
+    /* padding-bottom: 0.1em; */
+    cursor: pointer;   
+}
+ul > li > a:hover{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.menu-container{
+    display: flex;
+    flex-direction: row;
+}
+.hamburger-menu{
+    display: none;
+}
+.button{
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: #1E0B94;
+    margin-right: 40px;
+    border-radius: 8px;
+}
+.button > a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.button > a:hover{
+    text-decoration: none;
+}
+.button:hover{
+    background-color: #4434A6;
+}
+@media screen and (max-width: 900px){
+    .search-bar{
+        display: none;
+    }
+    nav .button{
+        margin-left: 25px;
+        text-align: center;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        align-items: flex-start;
+        right: 1em;
+        padding: 1.2em 0;
+        border-radius: 0.3em;
+        box-shadow: 0 0 4px black;
+        width: 11em;
+        height: 100%;
+        background-color: #FFFFFF;
+    }
+    .show-ul{
+        display: flex;
+    }
+    li{
+        width: 100%;
+        padding: 0.5em 1.2em;
+        border: none;
+    }
+    li:hover{
+        background: #CAC5EB;
+    }
+}
+section{
+  margin-top: 100px;
+}
+/* library card */
+
+.card{
+  width: 86%;
+  margin: 3% 7% 0;
+  border-radius: 8px;
+  background-color: #bda5f6;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+}
+h2 > a{
+  color: #1E0B94;
+  text-decoration: underline;
+}
+h2{
+  margin-bottom: 10px;
+}
+.card-body{
+  margin: 1rem;
+  padding: 1rem;
+}
+.card-title{
+  margin-bottom: 0.75rem;
+}
+
+/* library card2 */
+
+.card2{
+  margin: 3% 7% 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+}
+
+/* icons */
+
+.icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+.download{
+  cursor: pointer;
+}
+.like{
+  margin-left: 80%;
+  cursor: pointer;
+}
+.dislike{
+  margin-left: 1%;
+  cursor: pointer;
+}
+.favorite{
+  margin-left: 40%;
+  cursor: pointer;
+}
+.comment{
+  margin-left: 1%;
+  cursor: pointer;
+}
+.content_copy{
+  margin-left: 1%;
+  cursor: pointer;
+}
+
+/* buttons */
+
+.library-button{
+  background-color: #4434A6;
+  margin: 0 1% 0 0;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 20px;
+  border: none;
+  width: 200px;
+}
+input{
+  background-color: inherit;
+}
